@@ -1,0 +1,18 @@
+
+1.
+Connect to the PI:
+ssh pi@192.168.2.2
+
+2. 
+cd Homer
+
+3. 
+sudo git pull https://github.com/mstemplinger/Homer.git main
+
+4. 
+Somit können Änderungen lokal vorgenommen werden.
+Updates dann mittels Push ins Git laden.
+Mit dem Befehl unter 3. wieder auf den Pi updaten.
+
+5. 
+Homer evtl. neu starten.
