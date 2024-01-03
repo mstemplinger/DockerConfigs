@@ -159,3 +159,9 @@ telegraf --service install --config-directory 'C:\Program Files\telegraf\conf'
 (Manchmal wird der Dienst jedoch falsch in der Registry hinterlegt. Hier ist der entsprechende Eintrag zu prüfen.)
 
 Danach kann der Telegraf Dienst gestartet und ausgeführt werden.
+
+
+
+Die entsprechende Anleitung stammt vom DarkwolfCave:
+
+[Raspberry Pi Monitoring kostenlos - Grafana, InfluxDB mit Portainer und Docker installieren | DarkWolfCave | 23. Juli 2022](https://darkwolfcave.de/raspberry-pi-monitoring-grafana-installieren/)
