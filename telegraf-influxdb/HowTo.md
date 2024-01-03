@@ -2,10 +2,6 @@
 
 Als erstes ist die Influx DB zu installieren.
 
-
-
-
-
 Es wird die aktuelle Version von Telegraf HomePage für Windows heruntergeladen.
 
 Diese findet man unter: [InfluxData Downloads](https://www.influxdata.com/downloads/)
@@ -16,8 +12,6 @@ oder per Powershell:
 wget https://dl.influxdata.com/telegraf/releases/telegraf-1.29.1_windows_amd64.zip -UseBasicParsing -OutFile telegraf-1.29.1_windows_amd64.zip Expand-Archive .\telegraf-1.29.1_windows_amd64.zip -DestinationPath 'C:\Program Files\InfluxData\telegraf'
 ```
 
-
-
 In der zu nutzenden Config Datei die Stelle für die Konfiguration der InfluxDB suchen und entsprechend anpassen. In diesem Beispiel wird eine Datenbank "windows_live" generiert.
 
 ```
@@ -26,7 +20,6 @@ In der zu nutzenden Config Datei die Stelle für die Konfiguration der InfluxDB 
 urls = ["http://192.168.2.2:8086"]
 
 database = "windows_live"
-
 ```
 
 Weiter unten in der Datei müssen diese Anpassungen vorgenommen werden.
@@ -157,8 +150,6 @@ Weiter unten in der Datei müssen diese Anpassungen vorgenommen werden.
     Measurement = "win_swap"    
 ```
 
-
-
 Mit diesem Befehl wird der telegraf als Windows Dienst registriert.
 
 ```
@@ -166,7 +157,5 @@ telegraf --service install --config-directory 'C:\Program Files\telegraf\conf'
 ```
 
 (Manchmal wird der Dienst jedoch falsch in der Registry hinterlegt. Hier ist der entsprechende Eintrag zu prüfen.)
-
-
 
 Danach kann der Telegraf Dienst gestartet und ausgeführt werden.
